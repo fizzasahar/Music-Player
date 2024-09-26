@@ -1,0 +1,105 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(images/bg.gif);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.music-player {
+  background: linear-gradient(to bottom right, #6a00f4, #a4508b);
+  border-radius: 15px;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.album-art img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.song-info {
+  margin-bottom: 20px;
+}
+
+.song-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+.artist-name {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  font-size: 22px;
+ border: #fff solid 2px;
+}
+
+.progress-bar-container {
+  margin-bottom: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.time-display {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.volume-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+}
+
+#volumeBar {
+  width: 80px;
+  margin-bottom: 5px;
+  transition: opacity 0.3s ease;
+}
+
+#volumeBar.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.volume-control:hover #volumeBar {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#volumeIcon {
+  cursor: pointer;
+  font-size: 20px;
+}

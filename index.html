@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/fav logo.png" type="image/x-icon">
+  <title>Music Player</title>
+</head>
+<body>
+  <div class="music-player">
+    <div class="album-art">
+      <!-- Replace 'your-album-image.jpg' with your new cover image -->
+      <img src="images/husn.jpeg" alt="Album Art">
+    </div>
+    <div class="song-info">
+      <!-- Change the song title here -->
+      <h3 class="song-title">Your Song Title</h3>
+      <!-- Change the artist name here -->
+      <p class="artist-name">Your Artist Name</p>
+    </div>    
+    <div class="volume-control">
+      <span id="volumeIcon">🔊</span>
+      <input type="range" id="volumeBar" min="0" max="100" value="100" class="hidden">
+    </div>  
+    <div class="controls">
+      <button id="prevBtn">⏮️</button>
+      <button id="playPauseBtn">▶️</button>
+      <button id="nextBtn">⏭️</button>
+    </div>
+    <div class="progress-bar-container">
+      <input type="range" id="progressBar" value="0" min="0" max="100">
+      <div class="time-display">
+        <span id="currentTime">0:00</span> / <span id="totalTime">3:45</span>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
